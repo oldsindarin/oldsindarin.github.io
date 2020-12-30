@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oldsindarin.github.io</id>
     <title>白夜行</title>
-    <updated>2020-12-30T15:58:37.915Z</updated>
+    <updated>2020-12-30T16:02:12.351Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oldsindarin.github.io"/>
     <link rel="self" href="https://oldsindarin.github.io/atom.xml"/>
@@ -10,13 +10,6 @@
     <logo>https://oldsindarin.github.io/images/avatar.png</logo>
     <icon>https://oldsindarin.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 白夜行</rights>
-    <entry>
-        <title type="html"><![CDATA[关于]]></title>
-        <id>https://oldsindarin.github.io/about/</id>
-        <link href="https://oldsindarin.github.io/about/">
-        </link>
-        <updated>2019-01-25T11:09:48.000Z</updated>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://oldsindarin.github.io/hello gridea/</id>
