@@ -4,82 +4,91 @@
     <meta charset="utf-8" >
 
 <title>山口组 | 杂-记</title>
-<meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://oldsindarin.github.io/favicon.ico?v=1609936179784">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://oldsindarin.github.io/favicon.ico?v=1609936466115">
 <link rel="stylesheet" href="https://oldsindarin.github.io/styles/main.css">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
+
+    <meta name="description" content="黑帮，官方称为有组织的犯罪集团，意大利称为黑手党。1972年由法兰西斯 柯波拉执导的美国电影《教父》，讲的就是关于美国黑手党的故事。
+在黑帮内部，有着自己的社会规范和帮派规则，通过秘密结社扩大帮派规模，以传统的人际关系为主要凝聚方式。正如中..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://oldsindarin.github.io">杂-记</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://oldsindarin.github.io">
+        <img src="https://oldsindarin.github.io/images/avatar.png?v=1609936466115" class="site-logo">
+        <h1 class="site-title">杂-记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
+          <a href="/" class="site-nav">
+            首页
+          </a>
         
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
+      
         
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
         
-      </ul>
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
     </div>
   </div>
-</nav>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+       | <a class="rss" href="https://oldsindarin.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>山口组</h1>
-            <p class="article-meta">
-              2021-01-03
-              
-            </p>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">山口组</h2>
+            <div class="post-date">2021-01-03</div>
             
-            <div class="post-content">
+            <div class="post-content" v-pre>
               <p>黑帮，官方称为有组织的犯罪集团，意大利称为黑手党。1972年由法兰西斯 柯波拉执导的美国电影《教父》，讲的就是关于美国黑手党的故事。</p>
 <p>在黑帮内部，有着自己的社会规范和帮派规则，通过秘密结社扩大帮派规模，以传统的人际关系为主要凝聚方式。正如中国武侠小说中的武功帮派一般，黑帮最初由一个或若干个成员因某种个人利益而创立，通过后期发展逐渐壮大，而发展起来的帮派核心利益则由最初的创立者所代表，这些人也就是黑帮的“帮主”了。</p>
 <p>黑帮的收入一般来源于暴力、诈骗、色情、聚赌和毒品等行为或者交易，有时也会经营传统营生，但依然包括了绑标、恐吓等，国家对这些商业行为大多定为非法。不同黑帮之间也经常为利益而产生暴力冲突，影响社会安宁。由于生存在国家社会规范体系之外，却以在规范社会的利益活动为基础，黑帮这种组织的存在使得世界各地都一致坚决予以打击。</p>
@@ -101,108 +110,41 @@
 <p>1935年10月，田冈一雄出狱，1936年1月正式成为山口登的子分组员。1937年2月，田冈又因斩杀同组组员大长八郎，再度入所服刑8年；大长八郎的兄长、山口组的若头大长一雄，为此求去。1940年，山口组为吉本兴业代理解决广泽虎造演出权转移的争议问题，与浅草的浪花家金蔵幕后组织“笼寅组”冲突；同年8月，山口登前往浅草浪花家金蔵的处所与笼寅组协商广泽虎造的演出权，被笼寅组成员袭击重伤。1942年10月，山口登因久伤不愈病逝。</p>
 
             </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
-          
-            <div class="next-post">
-              <div class="next">
-                下一篇
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://oldsindarin.github.io/post/ZmjJkyL6-/">
+                  <h3 class="post-title">
+                    华为freebuds3测评
+                  </h3>
+                </a>
               </div>
-              <a href="https://oldsindarin.github.io/post/ZmjJkyL6-/">
-                <h3 class="post-title">
-                  华为freebuds3测评
-                </h3>
-              </a>
-            </div>
-          
+            
+
+            
+
+          </div>
+
         </div>
-        
       </div>
-
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://oldsindarin.github.io/images/avatar.png?v=1609936179784" class="no-responsive avatar">
-    <div class="text-muted">温故而知新</div>
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://oldsindarin.github.io/post/VNnpgw366/">《红楼梦》神话起源</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://oldsindarin.github.io/post/BqHj3xlb2/">山口组</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://oldsindarin.github.io/post/ZmjJkyL6-/">华为freebuds3测评</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://oldsindarin.github.io/post/XoodM7O5i/">联通混淆免流</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://oldsindarin.github.io/post/bYXJ07dmJ/">青春片</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-    </div>
-  </div>
-  <div class="paper">
-     | <a class="rss" href="https://oldsindarin.github.io/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-
-
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
 <script type="application/javascript">
 
 AOS.init();
 
-hljs.initHighlightingOnLoad()
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
+
+
 
 
 

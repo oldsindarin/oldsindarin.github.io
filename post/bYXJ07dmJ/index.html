@@ -4,82 +4,91 @@
     <meta charset="utf-8" >
 
 <title>青春片 | 杂-记</title>
-<meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://oldsindarin.github.io/favicon.ico?v=1609936179784">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://oldsindarin.github.io/favicon.ico?v=1609936466115">
 <link rel="stylesheet" href="https://oldsindarin.github.io/styles/main.css">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
+
+    <meta name="description" content="在年轻演员大量产出的时代，青春片似乎成了青年演员的首选片种。只要颜值好，粉丝基础多，接演一部青春片，不仅有了一部代表作，还能依靠粉丝经济赚钱。
+但时日不同往日，观众被众多低分烂片荼毒后似乎幡然醒悟，光有颜值没有演技的青春片直接被弃剧。连纵横..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://oldsindarin.github.io">杂-记</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://oldsindarin.github.io">
+        <img src="https://oldsindarin.github.io/images/avatar.png?v=1609936466115" class="site-logo">
+        <h1 class="site-title">杂-记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
+          <a href="/" class="site-nav">
+            首页
+          </a>
         
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
+      
         
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
         
-      </ul>
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
     </div>
   </div>
-</nav>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+       | <a class="rss" href="https://oldsindarin.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>青春片</h1>
-            <p class="article-meta">
-              2021-01-03
-              
-            </p>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">青春片</h2>
+            <div class="post-date">2021-01-03</div>
             
-            <div class="post-content">
+            <div class="post-content" v-pre>
               <p>在年轻演员大量产出的时代，青春片似乎成了青年演员的首选片种。只要颜值好，粉丝基础多，接演一部青春片，不仅有了一部代表作，还能依靠粉丝经济赚钱。</p>
 <p>但时日不同往日，观众被众多低分烂片荼毒后似乎幡然醒悟，光有颜值没有演技的青春片直接被弃剧。连纵横言情剧多年的Anglebaby在登上《时代》周刊封面时，官方介绍中她的代表作仅是一部热门综艺“跑男”，翻看其多年的电视剧电影评分，多数都是3、4分徘徊。</p>
 <p>回看前几年的青春片市场，关注度较高的：张一白执导《匆匆那年》收获5.5分；赵薇执导《致我们终将逝去的青春》收获6.5分；韩洋执导《夏至未至》收获仅4.5分；郭敬民执导《悲伤逆流成河》收获5.9分，还有《北京爱情故事》、《后会无期》等。总体上看，评分4、5分居多，赵薇首次担当导演的《致青春》刚过及格线。</p>
@@ -119,97 +128,32 @@
 <p>相比执着于情感纠葛的青春片，风犬更多着墨于人物经历生活磨难下的自我奋斗和自我成长，从一路玩闹，到经历生活变故后奋斗高考考上大学，剧中人物收获了什么，观众心里都是感同身受的。</p>
 
             </div>
-          </article>
+            
+            
+
+            
+
+          </div>
+
         </div>
-        <div class="paper" data-aos="fade-in">
-          
-        </div>
-        
       </div>
-
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://oldsindarin.github.io/images/avatar.png?v=1609936179784" class="no-responsive avatar">
-    <div class="text-muted">温故而知新</div>
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://oldsindarin.github.io/post/VNnpgw366/">《红楼梦》神话起源</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://oldsindarin.github.io/post/BqHj3xlb2/">山口组</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://oldsindarin.github.io/post/ZmjJkyL6-/">华为freebuds3测评</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://oldsindarin.github.io/post/XoodM7O5i/">联通混淆免流</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://oldsindarin.github.io/post/bYXJ07dmJ/">青春片</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-    </div>
-  </div>
-  <div class="paper">
-     | <a class="rss" href="https://oldsindarin.github.io/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-
-
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
 <script type="application/javascript">
 
 AOS.init();
 
-hljs.initHighlightingOnLoad()
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
+
+
 
 
 

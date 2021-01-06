@@ -4,82 +4,93 @@
     <meta charset="utf-8" >
 
 <title>《红楼梦》神话起源 | 杂-记</title>
-<meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://oldsindarin.github.io/favicon.ico?v=1609936179784">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://oldsindarin.github.io/favicon.ico?v=1609936466115">
 <link rel="stylesheet" href="https://oldsindarin.github.io/styles/main.css">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
+
+    <meta name="description" content="女娲在大荒山无稽崖炼成补天所用的顽石，共计三万六千五百零一块。
+补天所用其中三万六千五百块，单单剩下一块，弃在青埂峰下。
+此顽石先前经过女娲煅炼，灵性已通，自来自去，可大可小。见其他顽石俱得补天之用，独自己不得入选，遂自怨自愧，日夜悲哀。
+..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://oldsindarin.github.io">杂-记</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://oldsindarin.github.io">
+        <img src="https://oldsindarin.github.io/images/avatar.png?v=1609936466115" class="site-logo">
+        <h1 class="site-title">杂-记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
+          <a href="/" class="site-nav">
+            首页
+          </a>
         
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
+      
         
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
         
-      </ul>
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
     </div>
   </div>
-</nav>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+       | <a class="rss" href="https://oldsindarin.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>《红楼梦》神话起源</h1>
-            <p class="article-meta">
-              2021-01-03
-              
-            </p>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">《红楼梦》神话起源</h2>
+            <div class="post-date">2021-01-03</div>
             
-            <div class="post-content">
+            <div class="post-content" v-pre>
               <p>女娲在大荒山无稽崖炼成补天所用的顽石，共计三万六千五百零一块。</p>
 <p>补天所用其中三万六千五百块，单单剩下一块，弃在青埂峰下。</p>
 <p>此顽石先前经过女娲煅炼，灵性已通，自来自去，可大可小。见其他顽石俱得补天之用，独自己不得入选，遂自怨自愧，日夜悲哀。</p>
@@ -108,108 +119,41 @@
 <p>都云作者痴，谁解其中味?</p>
 
             </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
-          
-            <div class="next-post">
-              <div class="next">
-                下一篇
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://oldsindarin.github.io/post/BqHj3xlb2/">
+                  <h3 class="post-title">
+                    山口组
+                  </h3>
+                </a>
               </div>
-              <a href="https://oldsindarin.github.io/post/BqHj3xlb2/">
-                <h3 class="post-title">
-                  山口组
-                </h3>
-              </a>
-            </div>
-          
+            
+
+            
+
+          </div>
+
         </div>
-        
       </div>
-
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://oldsindarin.github.io/images/avatar.png?v=1609936179784" class="no-responsive avatar">
-    <div class="text-muted">温故而知新</div>
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://oldsindarin.github.io/post/VNnpgw366/">《红楼梦》神话起源</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://oldsindarin.github.io/post/BqHj3xlb2/">山口组</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://oldsindarin.github.io/post/ZmjJkyL6-/">华为freebuds3测评</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://oldsindarin.github.io/post/XoodM7O5i/">联通混淆免流</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://oldsindarin.github.io/post/bYXJ07dmJ/">青春片</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-    </div>
-  </div>
-  <div class="paper">
-     | <a class="rss" href="https://oldsindarin.github.io/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-
-
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
 <script type="application/javascript">
 
 AOS.init();
 
-hljs.initHighlightingOnLoad()
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
+
+
 
 
 
