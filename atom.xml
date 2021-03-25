@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oldsindarin.github.io</id>
     <title>杂记</title>
-    <updated>2021-03-25T02:42:51.783Z</updated>
+    <updated>2021-03-25T02:46:47.243Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oldsindarin.github.io"/>
     <link rel="self" href="https://oldsindarin.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://oldsindarin.github.io/images/avatar.png</logo>
     <icon>https://oldsindarin.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 杂记</rights>
+    <entry>
+        <title type="html"><![CDATA[PS学习：线框字体海报效果]]></title>
+        <id>https://oldsindarin.github.io/vkhI8-CqM/</id>
+        <link href="https://oldsindarin.github.io/vkhI8-CqM/">
+        </link>
+        <updated>2021-03-25T02:43:05.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[杂谈：挫败感和成就感——逃离现实生活的原因]]></title>
         <id>https://oldsindarin.github.io/Ohy_4fV8S/</id>
