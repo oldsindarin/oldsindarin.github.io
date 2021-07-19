@@ -1,143 +1,140 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>PS学习：线框字体海报效果 | 杂记</title>
-<meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://oldsindarin.github.io/favicon.ico?v=1626659071901">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://oldsindarin.github.io/favicon.ico?v=1626659292485">
 <link rel="stylesheet" href="https://oldsindarin.github.io/styles/main.css">
 
 
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
+    <meta name="description" content="效果如下：
+
+要点：
+1.在已存在同一蒙版的情况下如何在其基础上添加多个遮罩？
+2.对单独图层进行渐变
+..." />
+    <meta name="keywords" content="PS学习" />
   </head>
   <body>
     <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://oldsindarin.github.io">
-        <img class="avatar" src="https://oldsindarin.github.io/images/avatar.png?v=1626659071901" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://oldsindarin.github.io">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://oldsindarin.github.io">
+        <img src="https://oldsindarin.github.io/images/avatar.png?v=1626659292485" class="site-logo">
         <h1 class="site-title">杂记</h1>
       </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div>
       
         
-          <a href="/" class="menu purple-link">
+          <a href="/" class="site-nav">
             首页
           </a>
         
       
         
-          <a href="/archives" class="menu purple-link">
+          <a href="/archives" class="site-nav">
             日期
           </a>
         
       
         
-          <a href="/tags" class="menu purple-link">
+          <a href="/tags" class="site-nav">
             标签归类
           </a>
         
       
     </div>
   </div>
-</transition>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      温故而知新 | <a class="rss" href="https://oldsindarin.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
 
-      <div class="content-container">
-        <div class="post-detail">
-          
-            <div class="feature-container" style="background-image: url('https://oldsindarin.github.io/post-images/vkhI8-CqM.jpg')">
-            </div>
-          
-          <h2 class="post-title">PS学习：线框字体海报效果</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2021-03-25</span>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">PS学习：线框字体海报效果</h2>
+            <div class="post-date">2021-03-25</div>
             
-              <span>
-                <i class="icon-pricetags-outline"></i>
-                
-                  <a href="https://oldsindarin.github.io/AJrvj47iY/">
-                    PS学习
-                    
-                  </a>
-                
-              </span>
+              <div class="feature-container" style="background-image: url('https://oldsindarin.github.io/post-images/vkhI8-CqM.jpg')">
+              </div>
             
-          </div>
-          <div class="post-content">
-            <p><em>效果如下：</em><br>
+            <div class="post-content" v-pre>
+              <p><em>效果如下：</em><br>
 <img src="https://oldsindarin.github.io/post-images/1616640234010.jpg" alt="" loading="lazy"></p>
 <p><em>要点：</em><br>
 1.在已存在同一蒙版的情况下如何在其基础上添加多个遮罩？<br>
 2.对单独图层进行渐变</p>
 
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://oldsindarin.github.io/AJrvj47iY/" class="tag">
+                    PS学习
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://oldsindarin.github.io/Ohy_4fV8S/">
+                  <h3 class="post-title">
+                    杂谈：挫败感和成就感——逃离现实生活的原因
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
           </div>
+
         </div>
-
-        
-          <div class="next-post">
-            <a class="purple-link" href="https://oldsindarin.github.io/Ohy_4fV8S/">
-              <h3 class="post-title">
-                下一篇：杂谈：挫败感和成就感——逃离现实生活的原因
-              </h3>
-            </a>
-          </div>
-          
       </div>
-
-      
-
-      <div class="site-footer">
-  <div class="slogan">温故而知新</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  温故而知新 | <a class="rss" href="https://oldsindarin.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-
     </div>
-    <script type="application/javascript">
 
-hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
 
 var app = new Vue({
   el: '#app',
@@ -147,6 +144,8 @@ var app = new Vue({
 })
 
 </script>
+
+
 
 
 
